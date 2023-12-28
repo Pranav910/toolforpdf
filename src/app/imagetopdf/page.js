@@ -5,7 +5,7 @@ import styles from "@/styles/img2pdf.module.css"
 import PrevImages from '@/components/PrevImages'
 import { jsPDF } from 'jspdf';
 
-function page() {
+function ImageToPdf() {
 
     const [images, setImages] = useState([])
     const [pdfname, setPdfName] = useState('')
@@ -80,4 +80,4 @@ function page() {
     )
 }
 
-export default page
+export default ImageToPdf
