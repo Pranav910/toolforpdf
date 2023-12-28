@@ -1,11 +1,11 @@
-'use client'
+"use client"
 
 import React, {useState } from 'react'
 import styles from "@/styles/img2pdf.module.css"
 import PrevImages from '@/components/PrevImages'
 import { jsPDF } from 'jspdf';
 
-function Page() {
+const Page = () => {
 
     const [images, setImages] = useState([])
     const [pdfname, setPdfName] = useState('')
@@ -80,4 +80,4 @@ function Page() {
     )
 }
 
-export default Page
+export default Page;
