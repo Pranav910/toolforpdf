@@ -1,0 +1,84 @@
+.main {
+    box-sizing: border-box;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+}
+
+.submain {
+    width: 70%;
+    height: 100vh;
+    position: relative;
+}
+
+.sideopts {
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.submain label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 10px 20px 0;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submain label:hover {
+    background-color: rgb(227, 19, 19);
+}
+
+.previmg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.previmg p{
+    color: rgba(0, 0, 0, 0.652);
+    font-weight: 100;
+}
+
+.sideopts input {
+    border: 0.5px solid rgba(255, 0, 0, 0.477);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.sideopts button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.sideopts button:hover{
+    background-color: rgb(233, 10, 10);
+    cursor: pointer;
+}

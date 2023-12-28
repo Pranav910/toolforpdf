@@ -1,0 +1,23 @@
+.imgdiv{
+    width: 25%;
+    height: 20vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-wrap: break-word;
+}
+
+.imgdiv img{
+    padding: 5px 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.imgdiv p{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.553);
+    
+}

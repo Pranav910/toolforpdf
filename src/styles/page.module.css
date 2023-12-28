@@ -1,0 +1,13 @@
+.main{
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 40px;
+}
+
+.tools{
+  display: flex;
+  width: 30%;
+  gap: 5px;
+  margin-top: 50px;
+}
+

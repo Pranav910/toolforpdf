@@ -1,0 +1,21 @@
+.toolmain{
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toolmain p{
+    color: rgba(0, 0, 0, 0.553);
+    font-size: 14px;
+}
+
+.toolmain a{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+    color: black;
+}
