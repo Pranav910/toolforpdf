@@ -64,7 +64,7 @@ const Page = () => {
                     {
                         images.length > 0?images.map((val, index) => {
                             return <PrevImages key={index} src={val.url} imageName={val.imageName} />
-                        }):<p className={styles.addimgmsg}>click '+' button to add images.</p>
+                        }):<p className={styles.addimgmsg}>click &apos;+&apos; button to add images.</p>
                     }
                 </div>
                 <input type='file' accept='image/*' multiple id='chooseimages' style={{ display: 'none' }} onChange={handleImages} />
