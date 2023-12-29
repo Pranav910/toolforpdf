@@ -12,14 +12,18 @@ const Page = () => {
 
 
     function handleImages(e) {
-        const imageFile = e.target.files[0]
-        const blob = new Blob([imageFile], { type: 'image/png' })
-        const imageURL = URL.createObjectURL(blob)
+        const imageFile = e.target.files
+        for(let file of imageFile){
 
-        setImages(prev => [...prev, {
-            url: imageURL,
-            imageName: imageFile.name
-        }])
+          const blob = new Blob([file], { type: 'image/png' })
+          const imageURL = URL.createObjectURL(blob)
+  
+          setImages(prev => [...prev, {
+              url: imageURL,
+              imageName: file.name
+          }])
+
+        }
 
     }
 
@@ -41,7 +45,7 @@ const Page = () => {
                 const imgWidth = pdf.internal.pageSize.getWidth()
                 const imgHeight = pdf.internal.pageSize.getHeight()
     
-                pdf.addImage(img, 'PNG', 0, 0, imgWidth, imgHeight)
+                pdf.addImage(img, 'JPEG', 0, 0, imgWidth, imgHeight)
                 pdf.addPage()
                 resolve()
               }
