@@ -9,4 +9,20 @@
     z-index: 100;
     position: fixed;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
