@@ -11,7 +11,7 @@ export default function Home() {
       <div className={styles.tools}>
       {
         tools.map((val, index) => {
-          return <PDFTools toolname = {val.name} key = {index} description={val.description} svg = {val.svg}/>
+          return <PDFTools link = {val.link} toolname = {val.name} key = {index} description={val.description} svg = {val.svg}/>
         })
       }
       </div>
