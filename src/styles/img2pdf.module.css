@@ -76,6 +76,9 @@
     border: none;
     border-radius: 50px;
     padding: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 
 .sideopts button:hover{
